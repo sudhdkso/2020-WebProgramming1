@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+        
+            $('a#meme').hover(function(){
+                $(this).css({
+                    background:'yellow',
+                    color:'white'
+                });
+            },function(){
+                  $(this).css({
+                    background:'white'
+                  });
+            });
+        });
+        </script>
+        <style>
+            body{
+                background-image: url('star.png');
+                background-repeat: repeat;
+                background-attachment: scroll;
+        
+            }
+            #white{
+                background-color:white;
+                width: 800px;
+                height: 1600px;
+                position:absolute;
+                left:20%;
+            }
+            #top_bar{   
+                background: gray;
+                left: 0; top: 20px; right:0;
+                height: 40px;
+                position: fixed;     
+        
+            }
+            #title{
+                background-attachment: fixed;
+                height: 300px;
+                width: 700px;
+                background-repeat:no-repeat;
+                left:200px; top:auto; right:auto;
+                margin-left: 270px;
+                padding-top: 0;
+            }
+            .box{
+                border-radius: 50%;
+                border: 3px solid #000000;
+                float:left;
+                background-color: white;
+                margin:60px 10px 10px 5px; padding:10px;
+                width:100px;
+                height:100px;
+            }
+           #meme{
+                line-height: 30px;
+                display: block;
+            }
+            div>a:first-child{margin-left:50px;}
+            div.menu{overflow:hidden;}
+            a{text-decoration: none;}
+            .font_big{font-size: 20px;}
+            .font_center{text-align: center;}
+            .font_color{color:white;}
+            .left{margin-top:60px; margin-left:30px;float:left; width:200px; height:300px;}
+            .right{margin:40px 20px;float:left;width:480px; height:600px;}
+        </style>
+</head>
+
+<body>
+   <img src="title.png" id="title">
+    <div id="white"> 
+            <div class="menu">
+                <a href="Mercury.html" id="meme" class="Mercury font_center font_big font_color box"><img src="noun_Mercury_icon.png"></a>   
+                <a href="Venus.html" id="meme" class="Venus font_center font_big font_color box"><img src="Venus_icon.png"></a>
+                <a href="Main.html"id="meme" class="font_center font_big font_color box"><img src="star_icon.png">Main</a>        
+                <a href="#" id="meme" class="Earth font_center font_big font_color box"><img src="Earth_icon.png">지구</a> 
+                <a href="Mars.html" id="meme" class="Mars font_center font_big font_color box"><img src="Mars_icon.png">화성</a>   
+            </div>
+            <div class="left"><img src="Earth_2.png"></div>
+            <div class="right"><h1 class="font_big"><b>지구(Earth)</h1><hr>
+                <p>
+                    우주에서 봤을 때 푸른색의 바다, 녹색의 산과 갈색의 흙에 흰색의 구름이 조화를 이루고 있는 아름다운 행성이다.<br>
+                    지구는 <a href="#Moon">달</a>이라는 유일한 자연위성을 가지고있다.<br><br>
+                    현재 지구의 대기는 약 78%의 질소분자와 21%의 산소분자, 1%의 물 분자,
+                    그리고 미량의 아르곤, 이산화탄소 등으로 이루어져 있다.<br>
+                    대기의 대부분이 이산화탄소로 이루어진금성과는 다른 구성의 대기를 가지게 된 것은금성보다 
+                    태양에 멀리 떨어져 있어서 온도가 급상승하지 않았기 때문이다.<br>
+                    따라서 물의 증발에 따른 온실효과의 폭주현상이 일어나지 않았다.<br>
+                    대기 중의 이산화탄소는 물에 융해되어 암석에 갇히거나, 식물의광합성 작용으로 인해산소로 바뀌게 되었다.<br><br>
+                    지구의 평균온도는 약 290K이며, 수성이나 달처럼 온도 변화가 심하지 않다.<br>
+                    그 이유는 지구의 대기때문인데,
+                    대기는 태양의 빛을 어느 정도 줄여주며, 지표에서 빠져나가는 열을 잡아주기도 한다.<br>
+                    그렇게 하여 낮과 밤의 온도격차를 줄여주어 생명체가 살기 적당한 온도를 유지시켜 준다.<hr>
+                    <h6>[네이버 지식백과] 지구 - 푸른 행성 (태양계의 행성, 한국천문연구원)</h6>
+                    
+                    
+                </p><br><br><br>
+                
+
+            </div>
+            
+            <div class="left"><img id="Moon" src="Moon1.png"></div>
+            <div class="right"><h1 class="font_big"><b>달(Moon)</h1><hr>
+                  <p>
+                    달(Moon)은 지구의 유일한 자연위성이다.<br>
+                    달의 지형은 '바다' (mare)라고 불리는 저지대와 이와 구분되는 고지대로 구분된다.<br>
+                    바다는 상대적으로 검고 회색을 띄는, 주로 현무암질로 된 용암 대지이고,
+                    고지대는 밝은 색이며 충돌구(impact crater)가 빽빽하게 분포한다.<br>
+                    고지대는 약 45억년전에, 바다는 약 35억년 전에 생성된 것으로 추정된다.<br>
+                    달에 대기가 없기 때문에 충돌구가 쉽게 만들어지지만 풍화작용과 화산, 지질활동 등을 겪지 않아 오래 유지된다.<hr>
+                    <h6>[네이버 지식백과] 달 [Moon] (천문학백과)</h6>
+                  </p>
+            </div>
+
+    </div>
+
+</body>
+</html>

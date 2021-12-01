@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+        
+            $('a').hover(function(){
+                $(this).css({
+                    background:'yellow',
+                    color:'white'
+                });
+            },function(){
+                  $(this).css({
+                    background:'white'
+                  });
+            });
+        });
+        </script>
+        <style>
+            body{
+                background-image: url('star.png');
+                background-repeat: repeat;
+                background-attachment: scroll;
+        
+            }
+            #white{
+                background-color:white;
+                width: 800px;
+                height: 1000px;
+                position:absolute;
+                left:20%;
+            }
+            #top_bar{   
+                background: gray;
+                left: 0; top: 20px; right:0;
+                height: 40px;
+                position: fixed;     
+        
+            }
+            #title{
+                background-attachment: fixed;
+                height: 300px;
+                width: 700px;
+                background-repeat:no-repeat;
+                left:200px; top:auto; right:auto;
+                margin-left: 270px;
+                padding-top: 0;
+            }
+            .box{
+                border-radius: 50%;
+                border: 3px solid #000000;
+                float:left;
+                background-color: white;
+                margin:60px 10px 10px 5px; padding:10px;
+                width:100px;
+                height:100px;
+            }
+           #meme{
+                line-height: 30px;
+                display: block;
+            }
+            div>a:first-child{margin-left:50px;}
+            div.menu{overflow:hidden;}
+            a{text-decoration: none;}
+            .font_big{font-size: 20px;}
+            .font_center{text-align: center;}
+            .font_color{color:white;}
+            #left{margin-top:60px; margin-left:30px;float:left; width:200px; height:300px;}
+            #right{margin:40px 40px;float:left;width:480px; height:300px;}
+        </style>
+</head>
+
+<body>
+   <img src="title.png" id="title">
+    <div id="white"> 
+            <div class="menu">
+                <a href="Mercury.html" id="meme" class="Mercury font_center font_big font_color box"><img src="noun_Mercury_icon.png"></a>   
+                 <a href="Venus.html" id="meme" class="Venus font_center font_big font_color box"><img src="Venus_icon.png"></a>
+                 <a href="Main.html"id="meme" class="font_center font_big font_color box"><img src="star_icon.png">Main</a>       
+                 <a href="Earth.html" id="meme" class="Earth font_center font_big font_color box"><img src="Earth_icon.png">지구</a> 
+                 <a href="Mars.html" id="meme" class="Mars font_center font_big font_color box"><img src="Mars_icon.png">화성</a>   
+            </div>
+            <div id="left"><img src="Mars_1.png"></div>
+            <div id="right"><h1 class="font_big"><b>화성(Mars)</h1></p><hr>
+            <p>
+                태양계의 네 번째 행성이며, 4개의 지구형 행성 중 하나다.<br> 
+                붉은색을 띠기 때문에 동양권에서는 불을 뜻하는 화(火)를 써서 화성 또는 형혹성(熒惑星)이라 부르고, 서양권에서는 로마 신화의 전쟁의 신 마르스의 이름을 따 Mars라 부른다.<br>
+                제 2의 지구라고도 불리는 화성은 지구에 비해 대기는 아주 희박하다.<br>
+                지표 부근의 대기압은 약 0.006기압으로 지구의 약 0.75%에 불과하다. 
+                이렇게 희박한 대기는 중력이 작기 때문이다.
+                화성대기의 구성은 이산화탄소가 약 95%, 질소가 약 3%, 아르곤이 약 1.6%이고, 다른 미량의 산소와 수증기 등을 포함한다.<br><br>
+                화성의 표면온도는 약 -140°C~20°C 정도로 평균온도는 약 -80°C이다.<br>
+                이렇게 낮은 온도는 화성의 대기가 희박하기 때문에 열을 유지할 수 없기 때문이라 알려져 있다.<br>
+                화성의 극지방에 존재하는 빙관 또한 낮은 온도로 인해 존재가 가능하다.<br><br>
+                화성의 표면은 주로 현무암과 안산암의 암석으로 되어 있다.<br>
+                이 두 가지는 지구 상에서 마그마가 지표 근처에서 굳어 생기는 암석이며, 
+                포함된 이산화규소의 양으로 구별된다.<br> 
+                화성의 대부분의 지역은 미세한 티끌로 두께 수 m 혹은 그 이상 덮여 있다.<br> 
+                이 먼지들은 대부분 산화철로 되어 있어서 화성은 전체적으로 붉게 보인다.<hr>
+                <h6>[네이버 지식백과] 화성 - 제2의지구 (태양계의 행성, 한국천문연구원)</h6>
+            </p>
+            </div>
+
+    </div>
+
+</body>
+</html>

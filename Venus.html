@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venus</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+        
+            $('a').hover(function(){
+                $(this).css({
+                    background:'yellow',
+                    color:'white'
+                });
+            },function(){
+                  $(this).css({
+                    background:'white'
+                  });
+            });
+        });
+        </script>
+        <style>
+            body{
+                background-image: url('star.png');
+                background-repeat: repeat;
+                background-attachment: scroll;
+        
+            }
+            #white{
+                background-color:white;
+                width: 800px;
+                height: 1000px;
+                position:absolute;
+                left:20%;
+            }
+            #top_bar{   
+                background: gray;
+                left: 0; top: 20px; right:0;
+                height: 40px;
+                position: fixed;     
+        
+            }
+            #title{
+                background-attachment: fixed;
+                height: 300px;
+                width: 700px;
+                background-repeat:no-repeat;
+                left:200px; top:auto; right:auto;
+                margin-left: 270px;
+                padding-top: 0;
+            }
+            .box{
+                border-radius: 50%;
+                border: 3px solid #000000;
+                float:left;
+                background-color: white;
+                margin:60px 10px 10px 5px; padding:10px;
+                width:100px;
+                height:100px;
+            }
+           #meme{
+                line-height: 30px;
+                display: block;
+            }
+            div>a:first-child{margin-left:50px;}
+            div.menu{overflow:hidden;}
+            a{text-decoration: none;}
+            .font_big{font-size: 20px;}
+            .font_center{text-align: center;}
+            .font_color{color:white;}
+            #left{margin-top:60px; margin-left:20px;float:left; width:200px; height:300px;}
+            #right{margin:40px 20px;float:left;width:500px; height:300px;}
+        </style>
+</head>
+
+<body>
+   <img src="title.png" id="title">
+    <div id="white"> 
+            <div class="menu">
+                <a href="Mercury.html" id="meme" class="Mercury font_center font_big font_color box"><img src="noun_Mercury_icon.png"></a>   
+                 <a href="#" id="meme" class="Venus font_center font_big font_color box"><img src="Venus_icon.png">금성</a>
+                 <a href="Main.html" id="meme" class="font_center font_big font_color box"><img src="star_icon.png">Main</a>      
+                 <a href="Earth.html" id="meme" class="Earth font_center font_big font_color box"><img src="Earth_icon.png">지구</a> 
+                 <a href="Mars.html" id="meme" class="Mars font_center font_big font_color box"><img src="Mars_icon.png">화성</a>   
+            </div>
+            <div>
+                <div id="left"><img src="Venus_2.png"></div>
+                <div id="right"><h1 class="font_big"><b>금성(Venus)</h1></p>
+                    <hr>
+                    <p>
+                        태양계의 두 번째 행성이다. 샛별, 새별로 불리기도 했다.<br> 
+                        태양 주위를 224일 주기로 돌고 있으며 달에 이어서 밤하늘에서 두 번째로 밝은 천체이다.<br> 
+                        금성은 그 출현 시간에 따라 다른 이름으로 불렸는데 저녁 무렵에 나타나는 금성을 장경성이라고 부르고
+                        새벽 무렵에 나타나는 금성을 샛별 혹은 명성(계명성)이라 불렀다.<br>
+                        서양에서는 금성을 로마신화의 비너스(Venus)라고 부르고 있다.<br>
+                        메소포타미아에서는 금성의 아름다움(밝기) 때문에 미의 여신 이슈타르라 불렸고,<br>
+                        이후 그리스에서는 아프로디테 등 세계 각국에서 금성의 이름을 아름다운 여성의 이름으로 붙인 경우가 많다.
+                    </p>
+                    <p>
+                        금성은 그냥 보면 하나의 점처럼 보이지만, 망원경으로 보면 달처럼 그 모습이 변하는 위상을 가지고 있다.<br> 
+                        금성의 대기는 두꺼운 이산화탄소로 덮여 있기 때문에 망원경으로는 표면이 보이지 않는다. 
+                        그래서 파장이 긴 전파를 이용해 관측하고 있다.<br><br>
+                        금성의 궤도는 다른 행성들의 궤도에 비하여 가장 원에 가깝다.<br> 
+                        그리고 공전 주기는 지구보다 140여 일 적은 약 225일이며, 레이더 관측에 의해 알아낸 금성의 자전주기는 약 243일이다.<br>
+                        공전주기와 자전주기가 비슷하여, 금성에서의 하루는 지구의 시간으로 117일이 된다.<br>
+                        <hr>
+                        <h6>[네이버 지식백과] 금성 - 지구의 형제 행성 (태양계의 행성, 한국천문연구원)</h6>
+                    </p>
+                 </div>
+
+    </div>
+
+</body>
+</html>

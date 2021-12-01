@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+    
+            $('a').hover(function(){
+                $(this).css({
+                    background:'yellow',
+                    color:'white'
+                   
+                });
+            },function(){
+                $(this).css({
+                    background:'white'
+                });
+            });
+    
+        });
+        window.onload=function(){
+            var count=0;
+            var image=document.getElementById('image');
+            var frames=['star1.png','star2.png','star3.png','star4.png','star5.png','star6.png','star7.png','star8.png','star9.png','star10.png','star11.png',
+            'star12.png','star13.png','star14.png','star15.png','star16.png','star17.png','star18.png','star19.png','star20.png','star21.png','star22.png'
+            ,'star23.png','star24.png','star25.png','star26.png','star27.png','star28.png','star29.png','star30.png','star31.png','star32.png','star33.png','star34.png','star35.png',
+            'star36.png','star37.png','star38.png','star39.png','star40.png','star41.png','star42.png'
+            ,'star43.png','star44.png','star45.png','star46.png','star47.png','star48.png','star49.png'
+            ,'star50.png','star51.png','star52.png','star53.png','star54.png','star55.png','star56.png',
+            'star57.png'];
+            setInterval(function(){
+                image.src=frames[count%frames.length];
+                count=count+1;
+            },1000/20);
+        }
+      
+    </script>
+    <style>
+        
+        body{
+            background-image: url('star.png');
+            background-repeat: repeat;
+            background-attachment: scroll;
+    
+        }
+        #white{
+            background-color:white;
+            width: 800px;
+            height: 1000px;
+            position:absolute;
+            left:20%;
+        }
+
+        #title{
+            background-attachment: fixed;
+            height: 300px;
+            width: 700px;
+            background-repeat:no-repeat;
+            left:200px; top:auto; right:auto;
+            margin-left: 270px;
+            padding-top: 0;
+            display: block;
+        }
+        .box{
+            border-radius: 50%;
+            border: 3px solid #000000;
+            float:left;
+            background-color: white;
+            margin:60px 10px 10px 5px; padding:10px;
+            width:100px;
+            height:100px;
+        }
+        .box2{
+            width: 600px; height:100px;
+            border: 2px solid black;
+            position: relative;
+            left: 13%;
+        }
+        #meme{
+            line-height: 30px;
+            display: block;
+           
+        }
+        #image{
+            margin: -90px 190px;
+           
+        }
+        
+        div>a:first-child{margin-left:50px;}
+        div.menu{overflow:hidden;}
+        a{text-decoration: none;}
+        .font_big{font-size: 20px;}
+        .font_center{text-align: center;}
+        .font_color{color:midnightblue;}
+    </style>
+
+</head>
+
+<body>
+   <img src="title.png" id="title">
+    <div id="white"> 
+            <div class="menu">
+                 <a href="Mercury.html" id="meme" class="Mercury font_center font_big font_color box"><img src="noun_Mercury_icon.png"></a>   
+                 <a href="Venus.html" id="meme" class="Venus font_center font_big font_color box"><img src="Venus_icon.png"></a>
+                 <a href="#" id="meme" class="font_center font_big font_color box"><img src="star_icon.png"></a>       
+                 <a href="Earth.html" id="meme" class="Earth font_center font_big font_color box"><img src="Earth_icon.png"></a> 
+                 <a href="Mars.html" id="meme" class="Mars font_center font_big font_color box"><img src="Mars_icon.png"></a>   
+            </div>
+            <br>
+            <h1 class="font_center">↑Click↑</h1>
+            <div class="box2"><h2 class="font_center">행성들의 정보가 궁금하다면<br> 위의 아이콘을 click하세요!</h2></div>     
+            <div><img id="image"></div>      
+    </div>
+    
+</body>
+</html>

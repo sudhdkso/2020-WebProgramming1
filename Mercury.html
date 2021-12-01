@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercury</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+        
+            $('a').hover(function(){
+                $(this).css({
+                    background:'yellow',
+                    color:'white'
+                });
+            },function(){
+                  $(this).css({
+                    background:'white'
+                  });
+            });
+        });
+        </script>
+        <style>
+            body{
+                background-image: url('star.png');
+                background-repeat: repeat;
+                background-attachment: scroll;
+        
+            }
+            #white{
+                background-color:white;
+                width: 800px;
+                height: 1000px;
+                position:absolute;
+                left:20%;
+            }
+            #top_bar{   
+                background: gray;
+                left: 0; top: 20px; right:0;
+                height: 40px;
+                position: fixed;     
+        
+            }
+            #title{
+                background-attachment: fixed;
+                height: 300px;
+                width: 700px;
+                background-repeat:no-repeat;
+                left:200px; top:auto; right:auto; bottom:10px;
+                margin-left: 270px;
+                padding-bottom: 0;
+            }
+            .box{
+                border-radius: 50%;
+                border: 3px solid #000000;
+                float:left;
+                background-color: white;
+                margin:60px 10px 10px 5px; padding:10px;
+                width:100px;
+                height:100px;
+            }
+           #meme{
+                line-height: 30px;
+                display: block;
+            }
+            div>a:first-child{margin-left:50px;}
+            div.menu{overflow:hidden;}
+            a{text-decoration: none;}
+            .font_big{font-size: 20px;}
+            .font_center{text-align: center;}
+            .font_color{color:white;}
+            #left{margin-top:60px; margin-left:-40px;float:left; width:200px; height:300px;}
+            #right{margin:40px 60px;float:left;width:500px; height:300px;}
+        </style>
+</head>
+
+<body>
+   <img src="title.png" id="title">
+    <div id="white"> 
+            <div class="menu">
+                 <a href="#" id="meme" class="Mercury font_center font_big font_color box"><img src="noun_Mercury_icon.png">수성</a>   
+                 <a href="Venus.html" id="meme" class="Venus font_center font_big font_color box"><img src="Venus_icon.png"></a>
+                 <a href="Main.html" id="meme" class="font_center font_big font_color box"><img src="star_icon.png">Main</a>       
+                 <a href="Earth.html" id="meme" class="Earth font_center font_big font_color box"><img src="Earth_icon.png">지구</a> 
+                 <a href="Mars.html" id="meme" class="Mars font_center font_big font_color box"><img src="Mars_icon.png">화성</a>   
+            </div>
+            <div>
+                <div id="left"><img src="Mercury_3.png"></div>
+                <div id="right"><h1 class="font_big"><b>수성(Mercurius)</h1>
+                        <hr>
+
+                    <p>
+                    수성은 해가 진 직후 서쪽 하늘과, 해가 뜨기 직전 동쪽 하늘에서만 볼 수가 있다.<br>
+                    그리고 망원경으로 수성을 보면 달과 같이 그 위상이 변하는 것을 알 수 있다.
+                    표면의 모습도 달과 매우 비슷하다.<br><br>
+                    수성에는 대기가 거의 존재하지 않고 매우 가벼운 가스층이 있다.<br> 
+                    수성의 형성 초기에는 다른 행성과 마찬가지로 대기가 존재했을 것이라 생각되지만
+                    중력이 작기 때문에 그 대부분이 우주로 날아갔을 것이다. <br>
+                    현재 수성의 대기는 다양한 방법에 의해 공급되고 있다.<br>
+                    태양풍에 포함된 수소와 헬륨은 수성의 자기장에 붙잡히고, 
+                    미세 운석의 충돌로 산소, 나트륨, 칼륨 등의 원자가 대지에서 증발되어 나온다.<br><br>
+                    1992년 레이더 관측에 의해 수성의 북극 부분에서 물과 얼음이 발견되었다.<br> 
+                    이 얼음은 혜성의 충돌이나 수성 내부에서 방출되어 생긴 물이 1년 동안 태양광이 닿지
+                    않는 극지방의 크레이터 바닥에 남겨져 있던 것이라 추측된다.<br><hr>
+                    <h6>[네이버 지식백과]수성 - 태양의 첫째 행성 (태양계의 행성, 한국천문연구원)</h6>   
+                    </p>
+                </div>
+                
+            </div>
+
+    </div>
+
+</body>
+</html>
